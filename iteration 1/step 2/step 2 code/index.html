@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CS452</title>
+  <meta name="description" content="Browser for CS452 Code">
+  <meta name="author" content="CS452 Student">
+</head>
+
+<body>
+  <canvas id="glCanvas" width="640" height="480"></canvas>
+  <br>
+  <div class="control_area" style="width: 640px;">
+    <div class="cam_pos_sliders" style="float: left; width: 50%;">
+      <p>Camera Position (does nothing for now):</p>
+      <div>
+        <label for="camX">X:</label>
+        <input type="range" min="-20" max="20" value="2" step="0.1" class="slider" id="camX">
+        <input id="camXVal" name="camXVal" value="2" style="width: 50px;">
+      </div>
+      <div>
+        <label for="camY">Y:</label>
+        <input type="range" min="-20" max="20" value="2" step="0.1" class="slider" id="camY">
+        <input id="camYVal" name="camYVal" value="2" style="width: 50px;">
+      </div>
+      <div>
+        <label for="camZ">Z:</label>
+        <input type="range" min="-20" max="20" value="-4" step="0.1" class="slider" id="camZ">
+        <input id="camZVal" name="camZVal" value="-4" style="width: 50px;">
+      </div>
+    </div>
+    <div class="cam_look_sliders" style="float: right; width: 50%;">
+      <p>Camera Focus (does nothing for now):</p>
+      <div>
+        <label for="lookX">X:</label>
+        <input type="range" min="-20" max="20" value="0" step="0.1" class="slider" id="lookX">
+        <input id="lookXVal" name="lookXVal" value="0" style="width: 50px;">
+      </div>
+      <div>
+        <label for="lookY">Y:</label>
+        <input type="range" min="-20" max="20" value="0" step="0.1" class="slider" id="lookY">
+        <input id="lookYVal" name="lookYVal" value="0" style="width: 50px;">
+      </div>
+      <div>
+        <label for="lookZs">Z:</label>
+        <input type="range" min="-20" max="20" value="0" step="0.1" class="slider" id="lookZ">
+        <input id="lookZVal" name="lookZVal" value="0" style="width: 50px;">
+      </div>
+    </div>
+  </div>
+  <!-- If you add a file, make sure to include it here! -->
+  <script src="js/main.js"></script>
+  <script src="js/shader.js"></script>
+  <script src="js/vertex-data.js"></script>
+  <script src="js/drawable.js"></script>
+  <script src="js/helpers.js"></script>
+  <script src="js/obj-loader.js"></script>
+  <!-- http://glmatrix.net/docs/ -->
+  <script src="js/gl-matrix-min.js"></script>
+</body>
+</html>
